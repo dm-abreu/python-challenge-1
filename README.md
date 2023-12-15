@@ -81,6 +81,6 @@ Feel free to reach out with any questions, feedback, or suggestions. You can fin
 
 ### Acknowledgements
 <ul>
-<li>Columbia University AI Bootcamp</li>
-<li>Python Documentation</li>
+<li>[Columbia University AI Bootcamp](https://bootcamp.cvn.columbia.edu/micro/artificial-intelligence/landing/)</li>
+<li>[Python Documentation](https://docs.python.org/3/)</li>
 </ul>
