@@ -52,7 +52,7 @@ menu = {
 
 # 1. Set up order list. Order list will store a list of dictionaries for
 # menu item name, item price, and quantity ordered
-
+order = []
 
 # Launch the store and present a greeting to the customer
 print("Welcome to the variety food truck.")
@@ -118,29 +118,36 @@ while place_order:
                     }
                     i += 1
             # 2. Ask customer to input menu item number
-
+            menu_selection = input("Please enter menu number you wish to order")
 
             # 3. Check if the customer typed a number
-
+             if menu_selection.isdigit()
                 # Convert the menu selection to an integer
-
+                menu_selection = int(menu_selection)
 
                 # 4. Check if the menu selection is in the menu items
-
+                if menu_selection in menu_items:
                     # Store the item name as a variable
-
+                    item_name = menu_items[menu_selection]['Item name is']
 
                     # Ask the customer for the quantity of the menu item
-
+                    quantity = input(f"How many would you like in your order? '{item_name}' (Default is 1 if input is not valid): "
 
                     # Check if the quantity is a number, default to 1 if not
-
+                    if quantity.isdigit():
+                        quantity = int(quantity)
+                    else
+                        print("Defaulting to 1 - input is not valid")
+                        quantity = 1
+                                                         
 
                     # Add the item name, price, and quantity to the order list
-
+                    orders.append({"Item name": item_name, "Price": menu_items[menu_selection]['Price'],"Quantity": quantity })
+                        
 
                     # Tell the customer that their input isn't valid
-
+                else:
+                    print("Your input isn't valid")
 
                 # Tell the customer they didn't select a menu option
 
@@ -156,21 +163,24 @@ while place_order:
         keep_ordering = input("Would you like to keep ordering? (Y)es or (N)o ")
 
         # 5. Check the customer's input
-
+        if keep_ordering.lower() == "y":
                 # Keep ordering
-
+                break
                 # Exit the keep ordering question loop
-
+        match keep_ordering.lower():
+            case 'y':
+                # Keep ordering
+                break
+            case 'n':
                 # Complete the order
-
+                ...
+                # Exit the keep ordering question loop
+            case _:
+                # Tell the customer to try again
+                print("Please try again.")
                 # Since the customer decided to stop ordering, thank them for
                 # their order
-
-                # Exit the keep ordering question loop
-
-
-                # Tell the customer to try again
-
+                print("Thank you for your order.")
 
 # Print out the customer's order
 print("This is what we are preparing for you.\n")
@@ -182,19 +192,28 @@ print("Item name                 | Price  | Quantity")
 print("--------------------------|--------|----------")
 
 # 6. Loop through the items in the customer's order
-
+for order in orders:
     # 7. Store the dictionary items as variables
-
+    item_name = order['Item name']
+    price = order['Price']
+    quantity = order['Quantity']
 
     # 8. Calculate the number of spaces for formatted printing
-
+    name_spaces = " " *(26 - len(item_name))
 
     # 9. Create space strings
-
+    price_str = f"${price:.2f}"
+    price spaces = " " * (8 -len(price_str))
 
     # 10. Print the item name, price, and quantity
-
+    print(f"{item_name}{name_spaces}|{price_str}{price_spaces}| {quantity}")
 
 # 11. Calculate the cost of the order using list comprehension
 # Multiply the price by quantity for each item in the order list, then sum()
 # and print the prices.
+
+costs =[item['Price'] * item['Quantity'] for item in orders]
+total_cost = sum(costs)
+
+print(f"\nThe total cost is: ${total_cost:.2f}")
+
