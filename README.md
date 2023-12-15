@@ -32,6 +32,23 @@ This interactive program simulates a food truck ordering experience, allowing cu
     <li>Run the main Python script to launch the program.</li>
 </ul>
 
+## Sample Output
+---
+Welcome to the variety food truck.
+From which menu would you like to order? 
+1: Snacks
+2: Meals
+[...]
+
+Item name                 | Price  | Quantity
+--------------------------|--------|----------
+Cookie                    | $0.99  | 2
+Burrito                   | $4.49  | 1
+[...]
+
+Total Cost: $6.47
+
+
 ### Contributing:
 
 Fork the repository and submit pull requests for any improvements or bug fixes. Please ensure your contributions follow the project coding style and adhere to good coding practices.
