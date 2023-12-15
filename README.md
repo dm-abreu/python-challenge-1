@@ -7,6 +7,7 @@ This README file provides an overview of the food truck ordering system you've b
 This interactive program simulates a food truck ordering experience, allowing customers to browse menus, select items, and place orders.
 
 ### Features:
+
 <ul>
     <li>Menu browsing: Customers can choose from various food categories like Snacks, Meals, Drinks, and Desserts.</li>
     <li>Item selection: Customers can specify their desired item by entering the corresponding number.</li>
@@ -15,11 +16,13 @@ This interactive program simulates a food truck ordering experience, allowing cu
     <li>Receipt generation: After placing the order, the system generates a receipt with the order details and total price.</li>
 </ul>
 ### Technologies used:
+
 <ul>
     <li>Python programming language</li>
     <li>Markdown formatting</li>
 </ul>
 ### Running the program:
+
 <ul>
     <li>Clone or download the project repository.</li>
     <li>Open a terminal in the project directory.</li>
@@ -35,6 +38,7 @@ Fork the repository and submit pull requests for any improvements or bug fixes. 
 The project includes unit tests to ensure the functionality works as intended. You can run the tests to verify the system's behavior.
 
 ### Future improvements:
+
 <ul>
     <li>Implement payment processing options.</li>
     <li>Integrate with a database for storing order history.</li>
