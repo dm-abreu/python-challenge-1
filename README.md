@@ -15,12 +15,14 @@ This interactive program simulates a food truck ordering experience, allowing cu
     <li>Order list: The system tracks the customer's order in a list, displaying the item name, price, and quantity.</li>
     <li>Receipt generation: After placing the order, the system generates a receipt with the order details and total price.</li>
 </ul>
+
 ### Technologies used:
 
 <ul>
     <li>Python programming language</li>
     <li>Markdown formatting</li>
 </ul>
+
 ### Running the program:
 
 <ul>
@@ -29,6 +31,7 @@ This interactive program simulates a food truck ordering experience, allowing cu
     <li>Install any necessary dependencies (if any).</li>
     <li>Run the main Python script to launch the program.</li>
 </ul>
+
 ### Contributing:
 
 Fork the repository and submit pull requests for any improvements or bug fixes. Please ensure your contributions follow the project coding style and adhere to good coding practices.
