@@ -1,10 +1,10 @@
 ## python-challenge-1 
 
-This README file provides an overview of the food truck ordering system you've built using Python.
+This README file provides an overview of the food truck ordering system using Python.
 
 ### What is it?
 
-This interactive program simulates a food truck ordering experience, allowing customers to browse menus, select items, and place orders.
+This interactive program simulates a food truck ordering experience, allowing customers to browse menus, select number items, and place orders and receipts.
 
 ### Features:
 
@@ -32,7 +32,15 @@ This interactive program simulates a food truck ordering experience, allowing cu
     <li>Run the main Python script to launch the program.</li>
 </ul>
 
-## Sample Output
+From the menu directory, run the menu file
+
+```bash
+python menu.py
+```
+Follow the screen prompts to place your order.
+
+
+### Sample Output
 ---
 Welcome to the variety food truck.
 From which menu would you like to order? 
@@ -70,3 +78,9 @@ The project includes unit tests to ensure the functionality works as intended. Y
 
 Feel free to reach out with any questions, feedback, or suggestions. You can find contact information in the project repository or code comments.
 
+
+### Acknowledgements
+<ul>
+<li>Columbia University AI Bootcamp</li>
+<li>Python Documentation</li>
+</ul>
