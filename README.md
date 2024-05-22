@@ -1,7 +1,13 @@
-## python-challenge-1 
+## python-challenge-1 aka Interactive Food Truck Ordering System
 
 This README file provides an overview of the food truck ordering system using Python.
 
+## Background
+Design an interactive ordering system for a food truck menu, leveraging Python programming skills. This system will enable customers to place orders, view itemized receipts, and calculate the total cost, including the interest earned.
+
+## Files
+- Module 2 Challenge files.
+  
 ### What is it?
 
 This interactive program simulates a food truck ordering experience, allowing customers to browse menus, select number items, and place orders and receipts.
@@ -55,6 +61,52 @@ Burrito                   | $4.49  | 1
 [...]
 
 Total Cost: $6.47
+
+
+
+## Setup
+- Repository: `python-challenge-1`
+- Clone and push changes to GitHub or GitLab.
+
+## Challenge Instructions
+
+### Order System
+- Initialize an empty list to store customer orders.
+- Prompt customers for menu selections and validate inputs.
+- Append orders to the list in a structured dictionary format.
+- Implement a match-case statement for order continuation or completion.
+
+### Order Receipt
+- Iterate through the order list to print itemized receipts.
+- Calculate and display the total price using list comprehension.
+
+## Hints and Considerations
+- Utilize variables, lists, dictionaries, and loops.
+- Break down tasks into mini-objectives and use pseudocode.
+- Commit work regularly and maintain a detailed README.md file.
+
+
+
+### Order System
+- Initialize and populate the order list.
+- Prompt and validate user menu selections.
+- Convert menu selections to integers.
+- Check if selections are within menu items.
+- Extract item names from the menu dictionary.
+- Prompt for item quantities with default fallback.
+- Append item details to the order list.
+- Implement match-case for order processing.
+
+### Order Receipt
+- Loop through the order list to process items.
+- Save key values as individual variables.
+- Calculate formatting spaces for receipt display.
+- Create space strings with string multiplication.
+- Print itemized orders with calculated spaces.
+- Compute and print the total order price.
+
+## Submission
+Submit your GitHub repository URL containing the challenge work for evaluation.
 
 
 ### Contributing:
